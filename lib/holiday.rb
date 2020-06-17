@@ -28,7 +28,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash.each do |key, value|
     if key == "winter"
       value.each do |attribute, data|
-        if attribute == :christmas || :new_years
+        if attribute == :christmas 
           data << "Balloons"
         end
       end
